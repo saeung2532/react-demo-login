@@ -287,19 +287,6 @@ const MiniDrawer = (props) => {
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
-
-          <ListItem
-            component={NavLink}
-            to="/findcostcenter"
-            button
-            key="findcostcenter"
-            activeClassName={classes.isActive}
-          >
-            <ListItemIcon>
-              <FormatListNumberedIcon style={{ color: deepOrange[500] }} />
-            </ListItemIcon>
-            <ListItemText primary="Find Cost Center" />
-          </ListItem>
         </List>
       </Drawer>
     </div>

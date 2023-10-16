@@ -12,7 +12,6 @@ import Drawer from "./components/layouts/Drawer";
 import * as loginActions from "./actions/login.action";
 import LoginPage from "./components/pages/LoginPage/LoginPage";
 import HomePage from "./components/pages/HomePage/HomePage";
-import DeptAndCostPage from "./components/pages/DeptAndCostPage/DeptAndCostPage";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -98,11 +97,6 @@ export default function App() {
       <Switch>
         <LoginRoute exact path="/login" component={LoginPage} />
         <PrivateRoute exact path="/" component={HomePage} />
-        <PrivateRoute
-          exact
-          path="/findcostcenter"
-          component={DeptAndCostPage}
-        />
         {/* The Default not found component */}
         {/* <Route render={(props) => <Redirect to="/" />} /> */}
       </Switch>
