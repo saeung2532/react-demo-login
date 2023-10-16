@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import logo from "./logo.svg";
 import "./App.css";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {
